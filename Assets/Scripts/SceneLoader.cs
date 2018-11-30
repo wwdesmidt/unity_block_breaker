@@ -10,6 +10,7 @@ public class SceneLoader : MonoBehaviour
     public void loadNextScene()
     {
         int currentSceneIndex = SceneManager.GetActiveScene().buildIndex;
+        Debug.Log("current scene: " + currentSceneIndex + ", loading next scene");
         SceneManager.LoadScene(currentSceneIndex + 1);
     }
 
